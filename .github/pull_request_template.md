@@ -1,20 +1,27 @@
 ## Co zmienia ten PR
 
-<!-- Jedno, dwa zdania. Link do issue albo zlecenia, jeśli jest. -->
+<!-- Jedno, dwa zdania. "Fixes #123" zamyka issue po merge'u. -->
 
 ## Dlaczego
 
 ## Jak sprawdzone
 
-- [ ] testy albo walidacja przechodzą lokalnie i w CI
-- [ ] sprawdzone ręcznie: <!-- co i gdzie -->
+- [ ] bramka walidacji zielona lokalnie i w CI (komendy z `.ai/agentic.config.json` albo z README repo)
+- [ ] testy regresji dla poprawianego błędu
+- [ ] sprawdzone ręcznie: <!-- co i gdzie; dla zmian widocznych dla użytkownika -->
+
+## Etykiety
+
+- kategoria: `bug` / `feature` / `refactor` / `security` / `dependencies` / `documentation`
+- QA: `needs-qa` (zmiana widoczna dla użytkownika) albo `skip-qa` (dokumentacja, zależności, CI)
+- ryzyko, jeśli nie średnie: `risk-low` / `risk-high`
 
 ## Ryzyko i wycofanie
 
-<!-- Co może się zepsuć po merge'u, co uruchamia się automatycznie (wdrożenie, publikacja, migracja) i jak to cofnąć. -->
+<!-- Co uruchamia się automatycznie po merge'u (wdrożenie, publikacja, migracja), co może się zepsuć i jak to cofnąć. -->
 
 ## Przed merge'em
 
 - [ ] brak sekretów, tokenów i danych osobowych w zmianach
 - [ ] dokumentacja zaktualizowana, jeśli zmienia się sposób użycia
-- [ ] zmiany z Loop Factory przejrzane przez człowieka
+- [ ] PR z Loop Factory przejrzany przez człowieka

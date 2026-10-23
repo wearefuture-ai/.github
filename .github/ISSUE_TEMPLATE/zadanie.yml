@@ -1,5 +1,6 @@
 name: Zadanie
-description: Praca do wykonania w tym repozytorium
+description: Nowa funkcja albo zmiana do wykonania w tym repozytorium
+labels: ["feature"]
 body:
   - type: textarea
     id: cel

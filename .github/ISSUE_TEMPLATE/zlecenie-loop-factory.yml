@@ -1,6 +1,6 @@
 name: Zlecenie dla Loop Factory
 description: Praca dla fabryki agentów kodujących; wynik przychodzi jako draft PR do przeglądu
-labels: ["loop-factory"]
+labels: ["loop-factory", "feature"]
 body:
   - type: markdown
     attributes:
@@ -44,6 +44,24 @@ body:
     id: ryzyka
     attributes:
       label: Ryzyka
+  - type: dropdown
+    id: priorytet
+    attributes:
+      label: Priorytet
+      options:
+        - priority-medium
+        - priority-low
+        - priority-high
+        - priority-extreme
+  - type: dropdown
+    id: ryzyko
+    attributes:
+      label: Ryzyko zmiany
+      description: Jak duży obszar może zepsuć wdrożenie.
+      options:
+        - risk-medium
+        - risk-low
+        - risk-high
   - type: input
     id: recenzent
     attributes:
