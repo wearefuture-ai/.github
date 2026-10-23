@@ -1,0 +1,53 @@
+name: Zlecenie dla Loop Factory
+description: Praca dla fabryki agentów kodujących; wynik przychodzi jako draft PR do przeglądu
+labels: ["loop-factory"]
+body:
+  - type: markdown
+    attributes:
+      value: "Fabryka zaczyna pracę dopiero po przeglądzie zlecenia przez człowieka. Im dokładniejsze kryteria akceptacji, tym mniej iteracji."
+  - type: textarea
+    id: cel
+    attributes:
+      label: Cel
+      description: Co ma powstać albo się zmienić i dla kogo.
+    validations:
+      required: true
+  - type: textarea
+    id: kryteria
+    attributes:
+      label: Kryteria akceptacji
+      description: Sprawdzalne warunki; najlepiej takie, które da się zamienić w testy.
+      placeholder: "- ...\n- ..."
+    validations:
+      required: true
+  - type: textarea
+    id: dane
+    attributes:
+      label: Dane i uprawnienia
+      description: Z jakich danych korzysta wynik i w czyim imieniu działa.
+  - type: dropdown
+    id: klasa
+    attributes:
+      label: Klasa danych
+      options:
+        - org
+        - finance
+        - hr
+    validations:
+      required: true
+  - type: textarea
+    id: zakres
+    attributes:
+      label: Poza zakresem
+      description: Czego fabryka ma nie ruszać.
+  - type: textarea
+    id: ryzyka
+    attributes:
+      label: Ryzyka
+  - type: input
+    id: recenzent
+    attributes:
+      label: Recenzent
+      description: Kto przegląda i akceptuje draft PR.
+    validations:
+      required: true

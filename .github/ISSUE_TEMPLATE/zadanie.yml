@@ -1,0 +1,22 @@
+name: Zadanie
+description: Praca do wykonania w tym repozytorium
+body:
+  - type: textarea
+    id: cel
+    attributes:
+      label: Cel
+      description: Co ma się zmienić i po co.
+    validations:
+      required: true
+  - type: textarea
+    id: kryteria
+    attributes:
+      label: Kryteria akceptacji
+      description: Po czym poznamy, że zadanie jest zrobione.
+      placeholder: "- ...\n- ..."
+    validations:
+      required: true
+  - type: textarea
+    id: kontekst
+    attributes:
+      label: Kontekst i linki
